@@ -1,9 +1,8 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Republic of Me – Traveler Map</title>
   <style>
     body {
@@ -23,50 +22,55 @@
       justify-content: center;
       background: #ddd;
       padding: 0.5em;
-      gap: 1em;
     }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
+    .intro {
+      max-width: 800px;
+      margin: 2em auto;
+      background: white;
+      border-radius: 8px;
+      padding: 1.5em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1em;
       padding: 1em;
     }
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
       padding: 1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .dot {
-      width: 16px;
-      height: 16px;
+      height: 1em;
+      width: 1em;
       border-radius: 50%;
       display: inline-block;
       margin-right: 0.5em;
     }
-    .green { background: #4caf50; }
-    .orange { background: #ff9800; }
-    .red { background: #e53935; }
-    .blue { background: #3f51b5; }
+    .dot.green { background-color: #4CAF50; }
+    .dot.red { background-color: #f44336; }
+    .dot.orange { background-color: #FF9800; }
+    .dot.yellow { background-color: #FFEB3B; }
+    .dot.blue { background-color: #2196F3; }
+    .dot.purple { background-color: #9C27B0; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Republic of Me</h1>
-    <p>Interactive Traveler Map and Regulation Archive</p>
+    <h1>Republic of Me – Interactive Traveler Archive</h1>
   </header>
 
-  <nav>
-    <a href="#">Map</a>
-    <a href="#">Travelers</a>
-    <a href="#">Regulation</a>
-    <a href="#">Soundtrack</a>
-  </nav>
+  <section class="intro">
+    <h2>Welcome to the Republic of Me</h2>
+    <p>This is a symbolic archive of my healing—a place to hold the travelers, terrains, and emotional echoes that shaped my journey.</p>
+    <p>Each traveler here carries a part of my story, a fragment of memory, a somatic truth, or a protective role.</p>
+    <hr style="margin: 2em auto; width: 60%;">
+    <p><strong>Dedicated to Imaginary Andrea</strong> — the one who stayed beside me in silence, who held safety when I could not hold it myself, and who helped me draw the map until I could feel the edges with my own hands.</p>
+  </section>
 
   <section class="grid">
     <div class="card">
@@ -91,7 +95,9 @@
       <h2><span class="dot blue"></span>The One Who Regulates</h2>
       <p><em>"I track the color. I hold the line. I move us forward when we can, and slow us down when we must."</em></p>
       <p>System Role: Internal Stabilizer</p>
-    </div><div class="card">
+    </div>
+
+    <div class="card">
       <h2><span class="dot orange"></span>The One Who Carries Andrea</h2>
       <p><em>"I couldn’t leave her behind… so I took her with me."</em></p>
       <p>Symbolic Attachment: Reverse caregiving, internal pocket</p>
