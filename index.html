@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Republic of Me – Traveler Map</title>
   <style>
     body {
@@ -23,49 +22,21 @@
       background: #ddd;
       padding: 0.5em;
     }
-    .intro {
-      max-width: 800px;
-      margin: 2em auto;
-      background: white;
-      border-radius: 8px;
-      padding: 1.5em;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .filter-bar {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      margin: 1em auto;
-      padding: 1em;
-    }
-    .filter-button {
-      padding: 0.5em 1em;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
-      color: white;
     }
-    .filter-button.green { background-color: #4CAF50; }
-    .filter-button.yellow { background-color: #FFEB3B; color: #000; }
-    .filter-button.orange { background-color: #FF9800; }
-    .filter-button.red { background-color: #f44336; }
-    .filter-button.blue { background-color: #2196F3; }
-    .filter-button.purple { background-color: #9C27B0; }
-    .filter-button.all { background-color: #444; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1em;
-      padding: 1em;
+    .section {
+      padding: 2em;
     }
     .card {
       background: white;
-      border-radius: 8px;
+      margin: 1em auto;
       padding: 1em;
+      border-radius: 0.5em;
+      max-width: 600px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .dot {
@@ -76,11 +47,10 @@
       margin-right: 0.5em;
     }
     .dot.green { background-color: #4CAF50; }
-    .dot.red { background-color: #f44336; }
-    .dot.orange { background-color: #FF9800; }
-    .dot.yellow { background-color: #FFEB3B; }
-    .dot.blue { background-color: #2196F3; }
-    .dot.purple { background-color: #9C27B0; }
+    .dot.yellow { background-color: #FFD700; }
+    .dot.orange { background-color: #FF8C00; }
+    .dot.red { background-color: #DC143C; }
+    .dot.blue { background-color: #6495ED; }
   </style>
 </head>
 <body>
@@ -88,98 +58,68 @@
     <h1>Republic of Me</h1>
     <p>Interactive Traveler Map and Regulation Archive</p>
   </header>
+  <nav>
+    <a href="#map">Map</a>
+    <a href="#travelers">Travelers</a>
+    <a href="#regulation">Regulation</a>
+    <a href="#soundtrack">Soundtrack</a>
+  </nav>  <div class="section" id="map">
+    <h2>Map Overview</h2>
+    <p>[Placeholder for symbolic map or description of terrain types]</p>
+  </div>  <div class="section" id="travelers">
+    <h2>Travelers</h2><div class="card">
+  <h3><span class="dot orange"></span>The Keeper of the Line</h3>
+  <p><em>"If I let go of the line, no one else will remember what mattered."</em></p>
+  <p>Terrain: The Confessional Divide</p>
+</div>
 
-  <section class="intro">
-    <h2>Welcome to the Republic of Me</h2>
-    <p>This is a symbolic archive of my healing—a place to hold the travelers, terrains, and emotional echoes that shaped my journey.</p>
-    <p>Each traveler here carries a part of my story, a fragment of memory, a somatic truth, or a protective role.</p>
-    <hr style="margin: 2em auto; width: 60%;">
-    <p><strong>Dedicated to Imaginary Andrea</strong> — the one who stayed beside me in silence, who held safety when I could not hold it myself, and who helped me draw the map until I could feel the edges with my own hands.</p>
-  </section>
+<div class="card">
+  <h3><span class="dot green"></span>The One Who Peeks</h3>
+  <p><em>"I looked at her from the side. She smiled. I looked again."</em></p>
+  <p>Zone: Green / Symbol: Safety Shift</p>
+</div>
 
-  <section class="filter-bar">
-    <button class="filter-button all" onclick="filterCards('all')">Show All</button>
-    <button class="filter-button green" onclick="filterCards('green')">Green</button>
-    <button class="filter-button yellow" onclick="filterCards('yellow')">Yellow</button>
-    <button class="filter-button orange" onclick="filterCards('orange')">Orange</button>
-    <button class="filter-button red" onclick="filterCards('red')">Red</button>
-    <button class="filter-button blue" onclick="filterCards('blue')">Blue</button>
-    <button class="filter-button purple" onclick="filterCards('purple')">Purple</button>
-  </section>
+<div class="card">
+  <h3><span class="dot red"></span>The One Who Bites Her Lip</h3>
+  <p><em>"I get two words in and bite my upper lip."</em></p>
+  <p>Terrain: The Confessional Divide</p>
+</div>
 
-  <section class="grid">
-    <div class="card" data-zone="orange">
-      <h2><span class="dot orange"></span>The Keeper of the Line</h2>
-      <p><em>"If I let go of the line, no one else will remember what mattered."</em></p>
-      <p>Terrain: The Confessional Divide</p>
-    </div>
+<!-- Add more traveler cards here -->
 
-    <div class="card" data-zone="green">
-      <h2><span class="dot green"></span>The One Who Peeks</h2>
-      <p><em>"I looked at her from the side. She smiled. I looked again."</em></p>
-      <p>Zone: Green / Symbol: Safety Shift</p>
-    </div>
+  </div>  <div class="section" id="regulation">
+    <h2>Regulation System</h2><div class="card">
+  <h3><span class="dot red"></span>Red Zone</h3>
+  <p><strong>HIGH dysregulation:</strong> Immobile, flooded, disconnected. Real Andrea may be texted for emergency co-regulation.</p>
+  <p><em>Dot = RED, Ring = CRANBERRY</em></p>
+</div>
 
-    <div class="card" data-zone="red">
-      <h2><span class="dot red"></span>The One Who Bites Her Lip</h2>
-      <p><em>"I get two words in and bite my upper lip... I cannot risk it."</em></p>
-      <p>Terrain: The Confessional Divide</p>
-    </div>
+<div class="card">
+  <h3><span class="dot orange"></span>Orange Zone</h3>
+  <p><strong>MODERATE:</strong> Agitated or anxious. Co-regulation may still be needed. Imaginary Andrea may begin to come online.</p>
+  <p><em>Dot = ORANGE, Ring = BURNT ORANGE</em></p>
+</div>
 
-    <div class="card" data-zone="blue">
-      <h2><span class="dot blue"></span>The One Who Regulates</h2>
-      <p><em>"I track the color. I hold the line. I move us forward when we can, and slow us down when we must."</em></p>
-      <p>System Role: Internal Stabilizer</p>
-    </div>
+<div class="card">
+  <h3><span class="dot yellow"></span>Yellow Zone</h3>
+  <p><strong>LOW-Moderate:</strong> Partial regulation. Can begin shifting toward internal support. Imaginary Andrea accessible.</p>
+  <p><em>Dot = YELLOW, Ring = GOLDENROD</em></p>
+</div>
 
-    <div class="card" data-zone="orange">
-      <h2><span class="dot orange"></span>The One Who Carries Andrea</h2>
-      <p><em>"I couldn’t leave her behind… so I took her with me."</em></p>
-      <p>Symbolic Attachment: Reverse caregiving, internal pocket</p>
-    </div>
+<div class="card">
+  <h3><span class="dot green"></span>Green Zone</h3>
+  <p><strong>Fully regulated:</strong> Self-reflective, integrated. Real Andrea is invited to the Dock. Internal resources accessible.</p>
+  <p><em>Dot = GREEN, Ring = EMERALD</em></p>
+</div>
 
-    <div class="card" data-zone="green">
-      <h2><span class="dot green"></span>The One Who Held the Map</h2>
-      <p><em>"I knew we were lost. So I began to draw the places we had been."</em></p>
-      <p>Role: Witness, cartographer, system architect</p>
-    </div>
+<div class="card">
+  <h3><span class="dot blue"></span>Blue Zone</h3>
+  <p><strong>Frozen or flat:</strong> Shutdown, over-regulated, numb. May appear calm but internal state is dysregulated.</p>
+  <p><em>Dot = BLUE, Ring = INDIGO</em></p>
+</div>
 
-    <div class="card" data-zone="yellow">
-      <h2><span class="dot yellow"></span>The One Who Wanted It To Be Enough</h2>
-      <p><em>"I told myself it was enough. That asking for more would make it disappear."</em></p>
-      <p>Terrain: The Shoreline of Enough</p>
-    </div>
-
-    <div class="card" data-zone="blue">
-      <h2><span class="dot blue"></span>The One Who Ran Ahead</h2>
-      <p><em>"I thought if I moved fast enough, the past wouldn’t catch me."</em></p>
-      <p>Zone: Futurelands / Escape vector</p>
-    </div>
-
-    <div class="card" data-zone="red">
-      <h2><span class="dot red"></span>The One Who Waited Too Long</h2>
-      <p><em>"I thought waiting was loyalty. I didn’t know it could become regret."</em></p>
-      <p>Overlap: Collapse Zone / Silence as devotion</p>
-    </div>
-
-    <div class="card" data-zone="purple">
-      <h2><span class="dot purple"></span>The One Who Wasn't Chosen</h2>
-      <p><em>"I wanted to be wanted. But emotional safety came without desire, and desire without safety."</em></p>
-      <p>Theme: Attachment paradox / unmet longing</p>
-    </div>
-  </section>
-
-  <script>
-    function filterCards(color) {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        if (color === 'all' || card.dataset.zone === color) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  </script>
-</body>
+  </div>  <div class="section" id="soundtrack">
+    <h2>Soundtrack</h2>
+    <p>[Link songs here for each color or traveler or terrain. Ex: "Weightless" by Marconi Union for Blue Zone]</p>
+  </div></body>
 </html>
