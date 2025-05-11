@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Blanket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="green-zone">
+  <header>
+    <h1>The Blanket</h1>
+    <p class="terrain-subtitle">Green Zone — Internal Regulation Terrain</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="legend.html">Legend</a>
+    </nav>
+  </header>
+
+  <section class="terrain-description">
+    <h2>What It Is</h2>
+    <p>The Blanket is not a command or an invitation. It’s just there — a place where you can sit with her. Or alone. Or with the part of you that knows how to stay regulated in presence. It’s soft, grounded, safe.</p>
+  </section>
+
+  <section class="regulation-overlay">
+    <div class="regulation-cue">
+      <span class="dot green"></span>
+      <span class="diamond white"></span>
+      <p><em>"You don’t have to talk. You don’t have to move. Just sit. I’ll stay."</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Who Comes Here</h3>
+    <ul>
+      <li><a href="travelers.html#one-who-regulates">The One Who Regulates</a></li>
+      <li>Imaginary Andrea</li>
+      <li>Deb, when safe enough to be still</li>
+    </ul>
+  </section>
+
+  <section class="symbolic-meaning">
+    <h3>Symbolic Meaning</h3>
+    <p>This is one of the few terrains where silence is not absence. It’s presence. It’s the opposite of abandonment. It’s shared life force without expectation.</p>
+  </section>
+
+  <footer>
+    <p>Republic of Me | The Blanket | Shared Stillness, No Obligation</p>
