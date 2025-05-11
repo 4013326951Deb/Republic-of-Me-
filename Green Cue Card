@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulation Cue Card — The Warrior for Others</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Regulation Cue Card</h1>
+    <p class="terrain-subtitle">Green Zone — Cultural Heritage</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="map.html">Map</a>
+      <a href="legend.html">Legend</a>
+    </nav>
+  </header>
+
+  <section class="regulation-cue">
+    <h2>The Warrior for Others</h2>
+    <span class="dot green"></span>
+    <span class="diamond white"></span>
+    <p><em>"Even when it wasn’t for me, I knew someone needed me to fight. I didn’t disappear. I became the shield."</em></p>
+  </section>
+
+  <section>
+    <h3>What This Might Look Like</h3>
+    <ul>
+      <li>Focused clarity</li>
+      <li>Protecting others with conviction</li>
+      <li>Anchored in legacy and purpose</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>What This Might Need</h3>
+    <ul>
+      <li>Respectful witnessing of effort</li>
+      <li>Sustained presence without disruption</li>
+      <
