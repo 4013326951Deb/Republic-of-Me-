@@ -1,153 +1,62 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Republic of Me – Traveler Map</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #222;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #ddd;
-      padding: 0.5em;
-    }
-    nav a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    .section {
-      padding: 2em;
-    }
-    .card {
-      background: white;
-      margin: 1em auto;
-      padding: 1em;
-      border-radius: 0.5em;
-      max-width: 600px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .dot {
-      height: 1em;
-      width: 1em;
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: 0.5em;
-    }
-    .dot.green { background-color: #4CAF50; }
-    .dot.yellow { background-color: #FFD700; }
-    .dot.orange { background-color: #FF8C00; }
-    .dot.red { background-color: #DC143C; }
-    .dot.blue { background-color: #6495ED; }
-  </style>
+  <title>Republic of Me – Index</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Republic of Me</h1>
-    <p>Interactive Traveler Map and Regulation Archive</p>
+    <p class="subtitle">Therapeutic Mapping Archive & Symbolic Regulation Atlas</p>
   </header>
+
   <nav>
-    <a href="#map">Map</a>
-    <a href="#travelers">Travelers</a>
-    <a href="#regulation">Regulation</a>
-    <a href="#soundtrack">Soundtrack</a>
-  </nav>  <div class="section" id="map">
-    <h2>Map Overview</h2>
-    <p>[Placeholder for symbolic map or description of terrain types]</p>
-  </div>  <div class="section" id="travelers">
-    <h2>Travelers</h2><div class="card">
-  <h3><span class="dot orange"></span>The Keeper of the Line</h3>
-  <p><em>"If I let go of the line, no one else will remember what mattered."</em></p>
-  <p>Terrain: The Confessional Divide</p>
-</div>
+    <ul>
+      <li><a href="map.html">Interactive Map</a></li>
+      <li><a href="travelers.html">Traveler Directory</a></li>
+      <li><a href="soundtrack.html">Soundtrack</a></li>
+      <li><a href="regulation.html">Regulation Cue Cards</a></li>
+      <li><a href="quotes.html">Quote & Memory Archive</a></li>
+      <li><a href="timeline.html">Timeline of Escapes / Returns</a></li>
+    </ul>
+  </nav>
 
-<div class="card">
-  <h3><span class="dot green"></span>The One Who Peeks</h3>
-  <p><em>"I looked at her from the side. She smiled. I looked again."</em></p>
-  <p>Zone: Green / Symbol: Safety Shift</p>
-</div>
+  <main>
+    <section id="intro">
+      <h2>Welcome to the Republic of Me</h2>
+      <p>This is a living archive of self-regulation, symbolic storytelling, and therapeutic history. Navigate by terrain, regulation zone, or traveler.</p>
+    </section>
 
-<div class="card">
-  <h3><span class="dot red"></span>The One Who Bites Her Lip</h3>
-  <p><em>"I get two words in and bite my upper lip."</em></p>
-  <p>Terrain: The Confessional Divide</p>
-</div>
+    <section id="layers">
+      <h3>Project Layers (Visible & Planned)</h3>
+      <ul>
+        <li>🗺️ Map Layer: Symbolic terrains, clickable pins, regulation overlays</li>
+        <li>👤 Traveler Layer: Cue cards, sketches, emotional tone, memory anchors</li>
+        <li>🎵 Soundtrack Layer: Linked songs by zone, regulation state, or memory</li>
+        <li>📖 Quote Layer: Preserved statements, therapist words, internal mantras</li>
+        <li>🔔 Effects Layer: Optional ambient sounds (e.g., lantern flicker, shoreline breeze)</li>
+        <li>📈 Tracker Layer: XLS master file link for memories, terrain, travelers</li>
+        <li>📞 Skype Sound Placeholder: EMDR attempt (Egypt-USA) – insert tone file here</li>
+      </ul>
+    </section>
 
-<div class="card">
-  <h3><span class="dot blue"></span>The One Who Cannot Trust Her Thoughts</h3>
-  <p><em>"I’ve learned that I can’t fully trust my own thoughts as true."</em></p>
-  <p>Terrain: Unreliable Thought Fields</p>
-</div>
+    <section id="placeholders">
+      <h3>Planned Modules & Placeholders</h3>
+      <p>⚠️ These elements are defined but not yet implemented. You may see placeholder graphics or silent behavior until completed.</p>
+      <ul>
+        <li>📷 Traveler photo gallery</li>
+        <li>🌊 Sound effect embed from Skype EMDR attempt</li>
+        <li>📅 Interactive timeline scrubber (syncs with soundtrack & terrain)</li>
+        <li>🧭 Compass overlay for therapist orientation</li>
+      </ul>
+    </section>
+  </main>
 
-<div class="card">
-  <h3><span class="dot red"></span>The One Who Betrays the Bond</h3>
-  <p><em>"I feel like I’m betraying you, too… breaking some unspoken bond we’ve had."</em></p>
-  <p>Terrain: Betrayal Threshold</p>
-</div>
-
-<div class="card">
-  <h3><span class="dot orange"></span>The One Who Questions If It Was Real</h3>
-  <p><em>"If I realize I’m not fully lesbian, does that mean I was never ‘real’?"</em></p>
-  <p>Terrain: Echoes of Identity Hall</p>
-</div>
-
-<div class="card">
-  <h3><span class="dot yellow"></span>The One Who Only Felt Safe with Women</h3>
-  <p><em>"Emotional safety, as I experience it, is with women."</em></p>
-  <p>Terrain: Closeness Loop Path</p>
-</div>
-
-<div class="card">
-  <h3><span class="dot red"></span>The One Who Was Kept but Unwanted</h3>
-  <p><em>"I spent 22 years feeling unwanted by the one person I needed to want me."</em></p>
-  <p>Terrain: Chronic Longing Chapel</p>
-</div>
-
-  </div>  <div class="section" id="regulation">
-    <h2>Regulation System</h2>
-    <div class="card">
-      <h3><span class="dot red"></span>Red Zone</h3>
-      <p><strong>HIGH dysregulation:</strong> Immobile, flooded, disconnected. Real Andrea may be texted for emergency co-regulation.</p>
-      <p><em>Dot = RED, Ring = CRANBERRY</em></p>
-    </div><div class="card">
-  <h3><span class="dot orange"></span>Orange Zone</h3>
-  <p><strong>MODERATE:</strong> Agitated or anxious. Co-regulation may still be needed. Imaginary Andrea may begin to come online.</p>
-  <p><em>Dot = ORANGE, Ring = BURNT ORANGE</em></p>
-</div>
-
-<div class="card">
-  <h3><span class="dot yellow"></span>Yellow Zone</h3>
-  <p><strong>LOW-Moderate:</strong> Partial regulation. Can begin shifting toward internal support. Imaginary Andrea accessible.</p>
-  <p><em>Dot = YELLOW, Ring = GOLDENROD</em></p>
-</div>
-
-<div class="card">
-  <h3><span class="dot green"></span>Green Zone</h3>
-  <p><strong>Fully regulated:</strong> Self-reflective, integrated. Real Andrea is invited to the Dock. Internal resources accessible.</p>
-  <p><em>Dot = GREEN, Ring = EMERALD</em></p>
-</div>
-
-<div class="card">
-  <h3><span class="dot blue"></span>Blue Zone</h3>
-  <p><strong>Frozen or flat:</strong> Shutdown, over-regulated, numb. May appear calm but internal state is dysregulated.</p>
-  <p><em>Dot = BLUE, Ring = INDIGO</em></p>
-</div>
-
-  </div>  <div class="section" id="soundtrack">
-    <h2>Soundtrack</h2>
-    <p>[Link songs here for each color or traveler or terrain. Ex: "Weightless" by Marconi Union for Blue Zone]</p>
-  </div>
+  <footer>
+    <p>&copy; 2025 Republic of Me. All symbolic and emotional rights reserved.</p>
+  </footer>
 </body>
 </html>
