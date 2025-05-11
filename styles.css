@@ -15,4 +15,138 @@ header {
 
 footer {
   padding: 1rem;
-  background-color: #e0e0e0
+  background-color: #e0e0e0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+section {
+  padding: 1rem;
+}
+
+/* ========== TITLES & SUBTITLES ========== */
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.terrain-subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #aed581;
+}
+
+/* ========== NAVIGATION BAR ========== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #004d40;
+  padding: 0.5rem;
+}
+
+nav a,
+nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #c8e6c9;
+}
+
+/* ========== MOBILE MENU TOGGLE (if used) ========== */
+.menu-toggle {
+  background: #004d40;
+  color: #c8e6c9;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: none;
+  width: 100%;
+}
+
+nav.collapsed {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav.collapsed {
+    display: none;
+  }
+}
+
+/* ========== BUTTONS FOR VISUAL HUBS ========== */
+.nav-button {
+  background-color: #00695c;
+  color: #e0f2f1;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+/* ========== REGULATION DOTS ========== */
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #d32f2f; }
+.dot.orange { background: #f57c00; }
+.dot.yellow { background: #fbc02d; }
+.dot.green { background: #388e3c; }
+.dot.blue { background: #1976d2; }
+
+/* ========== CO-REGULATION DIAMONDS ========== */
+.diamond.white {
+  background: white;
+  border: 1px solid #999;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.diamond.dark-red {
+  background: #8b0000;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.candle::before {
+  content: "🕯";
+  margin-right: 6px;
+}
+
+/* ========== LEGEND SECTION SPACING ========== */
+.legend-section {
+  margin-bottom: 1.5rem;
+}
