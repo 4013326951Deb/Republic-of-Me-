@@ -1,4 +1,4 @@
-/* REGULATION DOTS */
+/* ========== REGULATION DOTS ========== */
 .dot {
   display: inline-block;
   width: 12px;
@@ -13,7 +13,7 @@
 .dot.green { background: #388e3c; }
 .dot.blue { background: #1976d2; }
 
-/* CO-REGULATION DIAMONDS */
+/* ========== CO-REGULATION DIAMONDS ========== */
 .diamond.white {
   background: white;
   border: 1px solid #999;
@@ -33,18 +33,17 @@
   margin-right: 6px;
 }
 
-/* Optional candle symbol styling (text-based) */
+/* Optional candle symbol styling */
 .candle::before {
   content: "🕯";
   margin-right: 6px;
 }
 
-/* LEGEND SECTION SPACING */
+/* ========== LEGEND SECTION STYLING ========== */
 .legend-section {
   margin-bottom: 1.5rem;
 }
 
-/* Subtitle styling */
 .terrain-subtitle {
   font-style: italic;
   font-size: 1rem;
@@ -53,54 +52,35 @@
   color: #aed581;
 }
 
-/* NAVIGATION BUTTONS (mobile toggle support) */
-.menu-toggle {
-  background: #004d40;
-  color: #c8e6c9;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  display: none;
-  width: 100%;
+/* ========== GLOBAL BASE ========== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #e0e0e0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+section {
+  padding: 1rem;
+}
+
+/* ========== NAVIGATION ========== */
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #004d40;
-  padding: 0.5rem;
-}
-
-nav.collapsed {
-  display: none;
-}
-
-.nav-button {
-  background-color: #00695c;
-  color: #e0f2f1;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin: 0.3rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.nav-button:hover {
-  background-color: #00796b;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  nav.collapsed {
-    display: none;
-  }
-}
+  bac
+  
