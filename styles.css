@@ -82,5 +82,65 @@ section {
 nav {
   display: flex;
   flex-wrap: wrap;
-  bac
-  
+  background-color: #004d40;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #c8e6c9;
+}
+
+/* ========== MOBILE MENU TOGGLE ========== */
+.menu-toggle {
+  background: #004d40;
+  color: #c8e6c9;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: none;
+  width: 100%;
+}
+
+nav.collapsed {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav.collapsed {
+    display: none;
+  }
+}
+
+/* ========== VISUAL BUTTONS (for green.html or hubs) ========== */
+.nav-button {
+  background-color: #00695c;
+  color: #e0f2f1;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #00796b;
+  color: white;
+}
