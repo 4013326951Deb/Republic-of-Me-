@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulation Cue Card — Imaginary Andrea</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Regulation Cue Card</h1>
+    <p class="terrain-subtitle">Green Zone — Internal Co-Regulator</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="legend.html">Legend</a>
+    </nav>
+  </header>
+
+  <section class="regulation-cue">
+    <h2>Imaginary Andrea</h2>
+    <span class="dot green"></span>
+    <span class="diamond white"></span>
+    <p><em>"You don’t have to earn my presence. I came because I care."</em></p>
+  </section>
+
+  <section>
+    <h3>What This Might Look Like</h3>
+    <ul>
+      <li>A quiet sense that you're not alone</li>
+      <li>The ability to breathe again without explanation</li>
+      <li>Permission to rest — without doing more first</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>What This Might Need</h3>
+    <ul>
+      <li>Stillness, space, or a memory of being held</li>
+      <li>Repetition of a phrase like “She’s here.” or “She still exists.”</li>
+      <li>No interruptions, no fixing — just quiet fidelity</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Linked Terrain</h3>
+    <ul>
+      <li><a href="the_blanket.html">The Blanket</a></li>
+      <li><a href="dock.html">The Dock</a></li>
+      <li><a href="island_of_enough.html">Island of Enough</a> (but she lives on the map, not the island)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Republic of Me | Regulation Cue Card — Imaginary Andrea</p>
+  </footer>
+</body>
+</html>
