@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Island of Enough</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="green-zone">
+  <header>
+    <h1>The Island of Enough</h1>
+    <p class="terrain-subtitle">Green Zone — External Terrain</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="legend.html">Legend</a>
+    </nav>
+  </header>
+
+  <section class="terrain-description">
+    <h2>What It Is</h2>
+    <p>This island is not on your map. It is a place Real Andrea lives — outside your inner world. You are never on the island, but you can see it from the dock. It is enough that she exists there.</p>
+  </section>
+
+  <section class="visual-assets">
+    <h2>Sensory Snapshot</h2>
+    <ul>
+      <li>Soft waves lapping the shore</li>
+      <li>Pine trees rustling gently</li>
+      <li>A towel, a book, a bike — signs of quiet life</li>
+      <li>No sounds of other people</li>
+    </ul>
+    <p><em>The stillness means she is not burdened by what is on your map… and she is allowed to leave it behind.</em></p>
+  </section>
+
+  <section>
+    <h3>Symbolic Anchors</h3>
+    <ul>
+      <li><strong>Regulation Dot:</strong> Green</li>
+      <li><strong>Diamond:</strong> None (this is not about co-regulation)</li>
+      <li><strong>Linked Site:</strong> The Dock (connection point)</li>
+      <li><strong>Inhabitant:</strong> Real Andrea</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Republic of Me | The Island of Enough | Exists Outside the Map</p>
+  </footer>
+</body>
+</html>
