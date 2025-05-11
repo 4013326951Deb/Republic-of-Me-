@@ -87,4 +87,20 @@ nav.collapsed {
 }
 
 .nav-button:hover {
-  background
+  background-color: #00796b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav.collapsed {
+    display: none;
+  }
+}
