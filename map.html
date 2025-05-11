@@ -3,8 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Map — Republic of Me</title>
+  <title>Internal Map — Republic of Me</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .map-tile {
+      padding: 1.5rem;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .map-tile:hover {
+      transform: scale(1.05);
+    }
+    .green { background-color: #388e3c; }
+    .orange { background-color: #f57c00; }
+    .yellow { background-color: #fbc02d; color: #000; }
+    .blue { background-color: #1976d2; }
+    .red { background-color: #d32f2f; }
+  </style>
 </head>
 <body>
   <header>
@@ -16,7 +41,31 @@
       <a href="legend.html">Legend</a>
     </nav>
   </header>
+
   <section>
-    <p>This map shows symbolic terrain within Deb's internal world. Each location corresponds to a memory, a traveler, or a regulation need.</p>
-    <ul>
-      <li><a href="me_the_people.html">Me the People (Green Zone
+    <p>This map shows symbolic terrain within Deb's internal world. Each tile links to a memory, a traveler, or a regulation space.</p>
+  </section>
+
+  <section class="map-grid">
+    <a href="me_the_people.html" class="map-tile green">Me the People</a>
+    <a href="dock.html" class="map-tile green">The Dock</a>
+    <a href="the_blanket.html" class="map-tile green">The Blanket</a>
+    <a href="island_of_enough.html" class="map-tile green">Island of Enough</a>
+
+    <a href="confessional_divide.html" class="map-tile orange">Confessional Divide</a>
+    <a href="fortified_room.html" class="map-tile orange">Fortified Room</a>
+
+    <a href="obedience_row.html" class="map-tile yellow">Obedience Row</a>
+    <a href="unmet_needs_pantry.html" class="map-tile yellow">Unmet Needs Pantry</a>
+
+    <a href="disassociation_coast.html" class="map-tile blue">Disassociation Coast</a>
+    <a href="collapse_zone.html" class="map-tile blue">Collapse Zone</a>
+
+    <a href="smashed_cake_drive.html" class="map-tile red">Smashed Cake Drive</a>
+  </section>
+
+  <footer>
+    <p>Republic of Me | Symbolic Map</p>
+  </footer>
+</body>
+</html>
