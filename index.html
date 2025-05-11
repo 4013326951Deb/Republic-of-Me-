@@ -1,131 +1,98 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Republic of Me – Traveler Map</title>
+  <title>Republic of Me – Home</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
     }
     header {
-      background: #222;
+      background-color: #222;
       color: white;
-      padding: 1em;
+      padding: 1rem;
       text-align: center;
     }
     nav {
+      background-color: #eee;
+      padding: 1rem;
       display: flex;
       justify-content: center;
-      background: #ddd;
-      padding: 0.5em;
-      gap: 1em;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
     nav a {
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1em;
-      padding: 1em;
+    main {
+      padding: 2rem;
     }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1em;
+    section {
+      margin-bottom: 2rem;
     }
-    .dot {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: 0.5em;
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
     }
-    .green { background: #4caf50; }
-    .orange { background: #ff9800; }
-    .red { background: #e53935; }
-    .blue { background: #3f51b5; }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Republic of Me</h1>
-    <p>Interactive Traveler Map and Regulation Archive</p>
+    <p>Therapeutic Mapping Archive & Symbolic Regulation Atlas</p>
   </header>
 
   <nav>
-    <a href="#">Map</a>
-    <a href="#">Travelers</a>
-    <a href="#">Regulation</a>
-    <a href="#">Soundtrack</a>
+    <a href="map.html">Interactive Map</a>
+    <a href="travelers.html">Traveler Directory</a>
+    <a href="soundtrack.html">Soundtrack</a>
+    <a href="regulation.html">Cue Cards</a>
+    <a href="quotes.html">Quotes</a>
+    <a href="timeline.html">Timeline</a>
   </nav>
 
-  <section class="grid">
-    <div class="card">
-      <h2><span class="dot orange"></span>The Keeper of the Line</h2>
-      <p><em>"If I let go of the line, no one else will remember what mattered."</em></p>
-      <p>Terrain: The Confessional Divide</p>
-    </div>
+  <main>
+    <section id="intro">
+      <h2>Welcome to the Republic of Me</h2>
+      <p>This site is a symbolic map of emotion, memory, and regulation. Every link leads to part of the story. This is your archive, your terrain.</p>
+    </section>
 
-    <div class="card">
-      <h2><span class="dot green"></span>The One Who Peeks</h2>
-      <p><em>"I looked at her from the side. She smiled. I looked again."</em></p>
-      <p>Zone: Green / Symbol: Safety Shift</p>
-    </div>
+    <section id="preview">
+      <h3>Map Preview</h3>
+      <iframe src="map.html" title="Symbolic Map Preview">
+        Your browser does not support iframe embedding. <a href="map.html">Open Map</a>.
+      </iframe>
+    </section>
 
-    <div class="card">
-      <h2><span class="dot red"></span>The One Who Bites Her Lip</h2>
-      <p><em>"I get two words in and bite my upper lip... I cannot risk it."</em></p>
-      <p>Terrain: The Confessional Divide</p>
-    </div>
+    <section id="instructions">
+      <h3>How to Use This Site</h3>
+      <ul>
+        <li><strong>Map:</strong> Clickable representation of internal terrains</li>
+        <li><strong>Travelers:</strong> Parts, protectors, and emotional states</li>
+        <li><strong>Soundtrack:</strong> Music mapped to regulation zones</li>
+        <li><strong>Cue Cards:</strong> Color-coded regulation tools</li>
+        <li><strong>Quotes:</strong> Therapist words, internal mantras, truths</li>
+        <li><strong>Timeline:</strong> Major moments of escape, return, or shift</li>
+      </ul>
+    </section>
+  </main>
 
-    <div class="card">
-      <h2><span class="dot blue"></span>The One Who Regulates</h2>
-      <p><em>"I track the color. I hold the line. I move us forward when we can, and slow us down when we must."</em></p>
-      <p>System Role: Internal Stabilizer</p>
-    </div><div class="card">
-      <h2><span class="dot orange"></span>The One Who Carries Andrea</h2>
-      <p><em>"I couldn’t leave her behind… so I took her with me."</em></p>
-      <p>Symbolic Attachment: Reverse caregiving, internal pocket</p>
-    </div>
-
-    <div class="card">
-      <h2><span class="dot green"></span>The One Who Held the Map</h2>
-      <p><em>"I knew we were lost. So I began to draw the places we had been."</em></p>
-      <p>Role: Witness, cartographer, system architect</p>
-    </div>
-
-    <div class="card">
-      <h2><span class="dot yellow"></span>The One Who Wanted It To Be Enough</h2>
-      <p><em>"I told myself it was enough. That asking for more would make it disappear."</em></p>
-      <p>Terrain: The Shoreline of Enough</p>
-    </div>
-
-    <div class="card">
-      <h2><span class="dot blue"></span>The One Who Ran Ahead</h2>
-      <p><em>"I thought if I moved fast enough, the past wouldn’t catch me."</em></p>
-      <p>Zone: Futurelands / Escape vector</p>
-    </div>
-
-    <div class="card">
-      <h2><span class="dot red"></span>The One Who Waited Too Long</h2>
-      <p><em>"I thought waiting was loyalty. I didn’t know it could become regret."</em></p>
-      <p>Overlap: Collapse Zone / Silence as devotion</p>
-    </div>
-
-    <div class="card">
-      <h2><span class="dot purple"></span>The One Who Wasn't Chosen</h2>
-      <p><em>"I wanted to be wanted. But emotional safety came without desire, and desire without safety."</em></p>
-      <p>Theme: Attachment paradox / unmet longing</p>
-    </div>
-  </section>
+  <footer>
+    <p>&copy; 2025 Republic of Me. Built with care, memory, and maps.</p>
+  </footer>
 </body>
 </html>
