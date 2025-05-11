@@ -1,0 +1,56 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+}
+.map-container {
+  text-align: center;
+}
+.layer {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.layer.visible {
+  display: block;
+}
+.terrain-label {
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+}
+.green {
+  border-color: #2ecc71;
+}
+.blue {
+  border-color: #3498db;
+}
+.orange {
+  border-color: #e67e22;
+}
+.red {
+  border-color: #e74c3c;
+}
+#nana::before {
+  content: "☘️ ";
+  font-size: 1rem;
+  margin-right: 4px;
+}
