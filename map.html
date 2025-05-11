@@ -1,100 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Republic of Me — Symbolic Map Layers</title>
+  <title>Map — Republic of Me</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    .container {
-      padding: 1em;
-      max-width: 900px;
-      margin: auto;
-    }
-    .layer-toggle {
-      margin: 1em 0;
-      text-align: center;
-    }
-    .layer-toggle button {
-      margin: 0.5em;
-      padding: 0.5em 1em;
-      font-size: 1em;
-    }
-    .map-box {
-      position: relative;
-      width: 100%;
-      height: 500px;
-      background-color: #e0e0e0;
-      border: 2px dashed #aaa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2em;
-    }
-    .layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.2em;
-      background-color: rgba(255,255,255,0.7);
-    }
-    .layer.visible {
-      display: flex;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Republic of Me: Interactive Map Layers</h1>
-    <p>Click to reveal layers of your symbolic inner world.</p>
+    <h1>Internal Terrain Map</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="regulation.html">Regulation</a>
+      <a href="legend.html">Legend</a>
+    </nav>
   </header>
-
-  <div class="container">
-    <div class="layer-toggle">
-      <button onclick="toggleLayer('terrain')">Toggle Terrain Layer</button>
-      <button onclick="toggleLayer('travelers')">Toggle Travelers Layer</button>
-      <button onclick="toggleLayer('zones')">Toggle Regulation Zones</button>
-      <button onclick="toggleLayer('quotes')">Toggle Quotes</button>
-    </div>
-
-    <div class="map-box">
-      <span>Base Map Placeholder</span>
-      <div id="terrain" class="layer">Symbolic Terrain Layer</div>
-      <div id="travelers" class="layer">Traveler Markers</div>
-      <div id="zones" class="layer">Regulation Zones Overlay</div>
-      <div id="quotes" class="layer">Quote + Memory Pins</div>
-    </div>
-  </div>
-
-  <script>
-    function toggleLayer(id) {
-      const layer = document.getElementById(id);
-      if (layer.classList.contains('visible')) {
-        layer.classList.remove('visible');
-      } else {
-        layer.classList.add('visible');
-      }
-    }
-  </script>
+  <section>
+    <p>Each pin on the map represents a symbolic location tied to a regulation zone, memory, or traveler.</p>
+  </section>
 </body>
 </html>
