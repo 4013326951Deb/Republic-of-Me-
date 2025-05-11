@@ -20,6 +20,20 @@
       padding: 1em;
       text-align: center;
     }
+    nav {
+      background-color: #1e2d40;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
       padding: 1em;
       max-width: 900px;
@@ -63,26 +77,37 @@
       border-radius: 6px;
       font-weight: bold;
       border: 2px solid #ccc;
+      text-decoration: none;
     }
     .green { border-color: #2ecc71; }
     .blue { border-color: #3498db; }
     .orange { border-color: #e67e22; }
     .red { border-color: #e74c3c; }
 
-    /* Sample placements */
+    /* Placement */
     #dock { top: 20px; left: 30px; }
     #collapse { top: 120px; left: 200px; }
     #confessional { top: 80px; right: 30px; }
     #shame { bottom: 40px; right: 40px; }
     #blanket { bottom: 60px; left: 60px; }
     #enough { bottom: 5px; left: 35%; background-color: #fef9e7; border: 2px dashed #bbb; }
+    #nana { bottom: 120px; left: 100px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Republic of Me: Interactive Map Layers</h1>
-    <p>Click to reveal layers of your symbolic inner world.</p>
+    <h1>Republic of Me: Interactive Map</h1>
+    <p>Explore symbolic terrains and inner companions.</p>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="map.html">Map</a>
+    <a href="travelers.html">Travelers</a>
+    <a href="regulation.html">Cue Cards</a>
+    <a href="nana_clover_patch.html">Nana’s Cottage</a>
+    <a href="soundtrack.html">Soundtrack</a>
+  </nav>
 
   <div class="container">
     <div class="layer-toggle">
@@ -95,13 +120,14 @@
     <div class="map-box">
       <span>Base Map Placeholder</span>
 
-      <div id="terrain" class="layer">
+      <div id="terrain" class="layer visible">
         <div id="dock" class="terrain-label green">The Dock</div>
         <div id="collapse" class="terrain-label blue">Collapse Zone</div>
         <div id="confessional" class="terrain-label orange">Confessional Divide</div>
         <div id="shame" class="terrain-label red">Shame Threshold</div>
         <div id="blanket" class="terrain-label green">The Blanket</div>
         <div id="enough" class="terrain-label">Island of Enough (off-map)</div>
+        <a id="nana" class="terrain-label green" href="nana_clover_patch.html" target="_blank">☘️ Nana’s Cottage</a>
       </div>
 
       <div id="travelers" class="layer">Traveler Markers</div>
@@ -113,12 +139,12 @@
   <script>
     function toggleLayer(id) {
       const layer = document.getElementById(id);
-      if (layer.classList.contains('visible')) {
-        layer.classList.remove('visible');
-      } else {
-        layer.classList.add('visible');
-      }
+      layer.classList.toggle('visible');
     }
+    // Auto-show terrain on load
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("terrain").classList.add("visible");
+    });
   </script>
 </body>
 </html>
