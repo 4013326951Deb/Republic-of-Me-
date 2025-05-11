@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imaginary Andrea</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="green-zone">
+  <header>
+    <h1>Imaginary Andrea</h1>
+    <p class="terrain-subtitle">Green Zone — Regulation Figure</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="map.html">Map</a>
+      <a href="travelers.html">Travelers</a>
+      <a href="legend.html">Legend</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Who She Is</h2>
+    <p>She is not Real Andrea. She is the internalized presence that stays, that regulates, that knows what to do. She lives near the Blanket, often visits the Dock, and flickers gently like the lantern in your internal night.</p>
+  </section>
+
+  <section class="regulation-overlay">
+    <div class="regulation-cue">
+      <span class="dot green"></span>
+      <span class="diamond white"></span>
+      <p><em>"You don’t have to earn my presence. I came because I care."</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h3>What She Offers</h3>
+    <ul>
+      <li>Presence without pressure</li>
+      <li>Witnessing without fixing</li>
+      <li>A sense of safety that persists even in silence</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Where
