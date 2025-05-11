@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traveler Directory | Republic of Me</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .traveler-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .traveler-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .traveler-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .reg-dot {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+    .red { background-color: #e74c3c; }
+    .orange { background-color: #e67e22; }
+    .yellow { background-color: #f1c40f; }
+    .green { background-color: #2ecc71; }
+    .blue { background-color: #3498db; }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Traveler Directory</h1>
+    <p class="subtitle">Symbolic companions across emotional terrain. Color dots indicate regulation zone.</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="map.html">Map</a> |
+      <a href="soundtrack.html">Soundtrack</a> |
+      <a href="regulation.html">Cue Cards</a> |
+      <a href="quotes.html">Quotes</a> |
+      <a href="timeline.html">Timeline</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="traveler-grid">
+
+      <div class="traveler-card">
+        <div class="traveler-name"><span class="reg-dot red"></span>The One Who Bites Her Lip</div>
+        <div class="quote">“She never says it — she holds it in her mouth.”</div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-name"><span class="reg-dot orange"></span>The Pretender</div>
+        <div class="quote">“She smiled with her mouth — not her eyes.”</div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-name"><span class="reg-dot yellow"></span>The One Who Waits for a Signal</div>
+        <div class="quote">“She watches for signs that never come.”</div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-name"><span class="reg-dot green"></span>The One Who Peeks</div>
+        <div class="quote">“I looked at her from the side. She smiled. I looked again.”</div>
+      </div>
+
+      <div class="traveler-card">
+        <div class="traveler-name"><span class="reg-dot blue"></span>The One Who Vanishes</div>
+        <div class="quote">“No sound. No trace. Gone.”</div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Part of the Republic of Me therapeutic archive. © 2025</p>
+  </footer>
+</body>
+</html>
