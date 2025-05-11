@@ -1,61 +1,27 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-}
-
-header {
-  background: #004d40;
-  color: white;
-  padding: 1rem;
-}
-
-nav a {
-  margin-right: 1rem;
-  color: #c8e6c9;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 1rem;
-}
-
-footer {
-  padding: 1rem;
-  font-size: 0.85rem;
-  background: #e0e0e0;
-  text-align: center;
-}
-
-/* Regulation Dots */
-.dot, .diamond {
+/* REGULATION DOTS */
+.dot {
   display: inline-block;
   width: 12px;
   height: 12px;
   margin-right: 6px;
-  vertical-align: middle;
+  border-radius: 50%;
 }
 
-.dot.red { background: #d32f2f; border-radius: 50%; }
-.dot.orange { background: #f57c00; border-radius: 50%; }
-.dot.yellow { background: #fbc02d; border-radius: 50%; }
-.dot.green { background: #388e3c; border-radius: 50%; }
-.dot.blue { background: #1976d2; border-radius: 50%; }
+.dot.red { background: #d32f2f; }
+.dot.orange { background: #f57c00; }
+.dot.yellow { background: #fbc02d; }
+.dot.green { background: #388e3c; }
+.dot.blue { background: #1976d2; }
 
-/* Co-regulation Diamonds */
+/* CO-REGULATION DIAMONDS */
 .diamond.white {
   background: white;
   border: 1px solid #999;
   transform: rotate(45deg);
   width: 12px;
   height: 12px;
+  display: inline-block;
+  margin-right: 6px;
 }
 
 .diamond.dark-red {
@@ -63,13 +29,22 @@ footer {
   transform: rotate(45deg);
   width: 12px;
   height: 12px;
+  display: inline-block;
+  margin-right: 6px;
 }
 
-/* Optional styling for legend sections */
+/* Optional candle symbol styling (text-based) */
+.candle::before {
+  content: "🕯";
+  margin-right: 6px;
+}
+
+/* LEGEND SECTION SPACING */
 .legend-section {
   margin-bottom: 1.5rem;
 }
 
+/* Subtitle styling */
 .terrain-subtitle {
   font-style: italic;
   font-size: 1rem;
@@ -77,3 +52,39 @@ footer {
   margin-bottom: 1rem;
   color: #aed581;
 }
+
+/* NAVIGATION BUTTONS (mobile toggle support) */
+.menu-toggle {
+  background: #004d40;
+  color: #c8e6c9;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: none;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #004d40;
+  padding: 0.5rem;
+}
+
+nav.collapsed {
+  display: none;
+}
+
+.nav-button {
+  background-color: #00695c;
+  color: #e0f2f1;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.nav-button:hover {
+  background
