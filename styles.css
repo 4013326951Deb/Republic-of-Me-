@@ -1,1 +1,79 @@
-body { font-family: sans-serif; padding: 1rem; } h1 { color: #004d40; } nav a { margin-right: 1rem; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #004d40;
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: #c8e6c9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+  font-size: 0.85rem;
+  background: #e0e0e0;
+  text-align: center;
+}
+
+/* Regulation Dots */
+.dot, .diamond {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.dot.red { background: #d32f2f; border-radius: 50%; }
+.dot.orange { background: #f57c00; border-radius: 50%; }
+.dot.yellow { background: #fbc02d; border-radius: 50%; }
+.dot.green { background: #388e3c; border-radius: 50%; }
+.dot.blue { background: #1976d2; border-radius: 50%; }
+
+/* Co-regulation Diamonds */
+.diamond.white {
+  background: white;
+  border: 1px solid #999;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+}
+
+.diamond.dark-red {
+  background: #8b0000;
+  transform: rotate(45deg);
+  width: 12px;
+  height: 12px;
+}
+
+/* Optional styling for legend sections */
+.legend-section {
+  margin-bottom: 1.5rem;
+}
+
+.terrain-subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #aed581;
+}
