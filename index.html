@@ -3,31 +3,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Republic of Me – Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Republic of Me: Interactive Map</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Republic of Me</h1>
-    <p>Therapeutic Mapping Archive & Symbolic Regulation Atlas</p>
+    <h1>Republic of Me: Interactive Map Layers</h1>
+    <p>Click to reveal layers of your symbolic inner world.</p>
   </header>
-  <nav>
-    <ul>
-      <li><a href="map.html">Interactive Map</a></li>
-      <li><a href="travelers.html">Traveler Directory</a></li>
-      <li><a href="soundtrack.html">Soundtrack</a></li>
-      <li><a href="regulation.html">Regulation Cue Cards</a></li>
-      <li><a href="quotes.html">Quote & Memory Archive</a></li>
-      <li><a href="timeline.html">Timeline of Escapes / Returns</a></li>
-    </ul>
-  </nav>
   <main>
-    <h2>Welcome to the Republic of Me</h2>
-    <p>This site is a living archive of symbolic terrain, emotional regulation, and traveler memory.</p>
-    <iframe src="map.html" width="100%" height="500px" title="Map Preview"></iframe>
+    <div class="map-container">
+      <button onclick="toggleLayer('terrain')">Toggle Terrain Layer</button>
+      <button onclick="toggleLayer('travelers')">Toggle Travelers Layer</button>
+      <div id="map">
+        <div id="terrain" class="layer visible">[Terrain Layer Placeholder]</div>
+        <div id="travelers" class="layer">[Traveler Layer Placeholder]</div>
+      </div>
+    </div>
   </main>
   <footer>
-    <p>&copy; 2025 Republic of Me. All rights reserved.</p>
+    <p>Part of the Republic of Me therapeutic mapping archive.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
